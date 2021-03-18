@@ -17,7 +17,7 @@ def prepare_fly(Fmonth, Dmonth1, Dmonth2, year, period, instType='spread'):
 
   s1 = (x-y).Close
   s2 = (y-z).Close
-  if instType='spread':
+  if instType=='spread':
     return s1, s2
-  if instType='fly':
+  if instType=='fly':
     return (s1-s2).dropna()
