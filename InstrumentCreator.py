@@ -1,3 +1,8 @@
+from DataProcessing import load_data, resamplePeriod
+import pandas as pd
+import numpy as np
+from datetime import datetime
+
 def prepare_fly(Fmonth, Dmonth1, Dmonth2, year, period, instType='spread'):
 
   Fmonth, Fmonth_n, Fmonth_d = load_data(Fmonth, year, interval='1min')
